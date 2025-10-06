@@ -4,7 +4,7 @@ Django Assignment 1 - Software Engineering Fall 2025
 AWS Link: http://djangopa1-env.eba-j9ecbrje.us-east-2.elasticbeanstalk.com/polls/
 
 ## SCREENSHOTS
+<img width="1512" height="395" alt="Screenshot 2025-10-06 at 1 19 13 AM" src="https://github.com/user-attachments/assets/4dcae689-edcf-4719-a8af-c603e6e26503" />
+<img width="1512" height="338" alt="Screenshot 2025-10-06 at 1 19 19 AM" src="https://github.com/user-attachments/assets/0c206e12-af6f-4076-b5c8-7830143ca868" />
+<img width="1512" height="344" alt="Screenshot 2025-10-06 at 1 19 27 AM" src="https://github.com/user-attachments/assets/36b34215-a869-406e-8f6a-e5dedb207f19" />
 
-<img width="1512" height="982" alt="Screenshot 2025-10-06 at 1 16 39 AM" src="https://github.com/user-attachments/assets/cd1e1a1c-1580-44d1-a98f-09e12bfcb37f" />
-
-<img width="3024" height="1440" alt="image" src="https://github.com/user-attachments/assets/152ad3a5-8212-4e02-bdd2-45b47b43895d" />
