@@ -2,14 +2,6 @@ language: python
 python:
   - "3.13"
 
-#services:
-#  - postgresql
-
-#env:
-#  global:
-#    - DJANGO_SETTINGS_MODULE=mysite.settings
-#    - SECRET_KEY="PLACEHOLDER_SECRET_KEY_FOR_TESTING"
-
 install:
   - pip install -r requirements.txt
 
@@ -19,7 +11,6 @@ before_script:
 script:
   - black --check .
   - flake8
-#  - python manage.py test
   - coverage run --source=polls manage.py test
   - coverage report
 
