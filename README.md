@@ -2,7 +2,7 @@
 Django Assignment 1 - Software Engineering Fall 2025
 
 [![Build Status](https://app.travis-ci.com/theshikharmalik/djangoPA1.svg?branch=main)](https://app.travis-ci.com/github/theshikharmalik/djangoPA1)
-[![Coverage Status](https://coveralls.io/repos/github/theshikharmalik/djangoPA1/badge.svg?branch=main)](https://coveralls.io/github/theshikharmalik/djangoPA1?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/theshikharmalik/djangoPA1/badge.svg?branch=main)](https://coveralls.io/github/theshikharmalik/djangoPA1)
 
 ## Description
 A simple Django polls application with CI/CD pipeline.
