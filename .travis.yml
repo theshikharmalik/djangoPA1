@@ -24,6 +24,7 @@ script:
   - coverage report
 
 after_success:
+  - export COVERALLS_BRANCH=$TRAVIS_BRANCH
   - coveralls
 
 deploy:
