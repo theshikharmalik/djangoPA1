@@ -1,0 +1,47 @@
+language: python
+python:
+  - "3.13"
+
+#services:
+#  - postgresql
+
+#env:
+#  global:
+#    - DJANGO_SETTINGS_MODULE=mysite.settings
+#    - SECRET_KEY="PLACEHOLDER_SECRET_KEY_FOR_TESTING"
+
+install:
+  - pip install -r requirements.txt
+
+before_script:
+  - python manage.py migrate
+  - python manage.py collectstatic --noinput
+
+script:
+  - black --check .
+  - flake8
+#  - python manage.py test
+  - coverage run --source=polls manage.py test
+  - coverage report
+
+after_success:
+  - coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: us-east-2
+  app: djangoPA1-v2
+  env: djangoPA1-env
+  bucket_name: elasticbeanstalk-us-east-2-127471246260
+  bucket_path: djangoPA1-v2
+  on:
+    branch: main
+  skip_cleanup: true
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+
